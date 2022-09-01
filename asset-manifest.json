@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Smart-House/static/css/main.b9c1e549.css",
+    "main.js": "/Smart-House/static/js/main.8588e150.js",
+    "static/media/SmartHome.png": "/Smart-House/static/media/SmartHome.45838c6d19f6624f001b.png",
+    "index.html": "/Smart-House/index.html",
+    "main.b9c1e549.css.map": "/Smart-House/static/css/main.b9c1e549.css.map",
+    "main.8588e150.js.map": "/Smart-House/static/js/main.8588e150.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b9c1e549.css",
+    "static/js/main.8588e150.js"
+  ]
+}
