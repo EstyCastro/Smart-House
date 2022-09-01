@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Routes , Route} from 'react-router-dom';
+import {HashserRouter as Router, Routes , Route} from 'react-router-dom';
 import React,{useState} from 'react'
 import {Provider} from './ContextAPI'
 import Home from './components/Home';
