@@ -4,18 +4,18 @@ import ShowingProducts from './ShowingProducts'
 
 export default function Room(props) {
   const [showResults, setShowResults] = useState(false)
-  const [countProducts ,setCountProducts] = useState(props.room.productsArr.length)//להתחיל את הספירה מכמות המוצרים שכבר הייתה 
+  const [countProducts ,setCountProducts] = useState(props.room.productsArr.length)//Start the count from the amount of products that was already there
 
   const changeFlag = ()=>{
     setShowResults(!showResults)
   }
   const addProduct = (prod)=>{
-    if(prod == "boiler" && props.room.typeRoom != "Bathroom" ){//לתקן לדייק 
+    if(prod == "boiler" && props.room.typeRoom != "Bathroom" ){ 
         alert("A boiler can only be added to a bathroom")
     }else{
         if(countProducts<5){
             props.addProduct({nameProduct:prod,nameRoom:props.room.nameRoom,situation:'red'})
-            setCountProducts(countProducts+1)//לסכום את מוצרים בנוסף למוצרים הקיימים
+            setCountProducts(countProducts+1)//Scheme for existing products
         }else{
             alert("No more products can be added to this room")
             return 0
