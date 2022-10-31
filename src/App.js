@@ -1,5 +1,5 @@
 import './App.css';
-import {HashRouter as Router, Routes , Route} from 'react-router-dom';
+import {BrowserRouter as Router, Routes , Route} from 'react-router-dom';
 import React,{useState} from 'react'
 import {Provider} from './ContextAPI'
 import Home from './components/Home';
@@ -28,22 +28,19 @@ function App() {
       }
     })
    
-    console.log('bla bla',ArrRooms)
    }
 
    const changeSituation = (item,color)=>{
-    console.log('product.color',color)
     let roomsArr=ArrRooms
     roomsArr.map((element)=>{
       if(element.nameRoom == item.nameRoom){
         element.productsArr.map((product)=>{
           if(product.nameProduct == item.nameProduct){
-            product.situation=color // שגיאה בשמירת הצבע לאחר לחיצה 
+            product.situation=color 
           }
         })
       }
     })
-    console.log('roomsArr',roomsArr)
     setRooms(roomsArr)
    }
 
